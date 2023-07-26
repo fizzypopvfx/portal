@@ -1,0 +1,176 @@
+body {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+/* Navigation bar styles */
+.navbar {
+	width: 80%;
+	margin: 0 auto;
+	height: 130px;
+	/* Set the height of the navigation bar to 130px */
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* Center the items vertically */
+	padding: 0px;
+}
+
+.navbar-left {
+	display: flex;
+	align-items: center;
+	/* Center the items vertically */
+	flex-wrap: wrap;
+}
+
+.nav-link {
+	color: black;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+/* Title styles */
+.navbar-title {
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Social links on the right */
+.navbar-right {
+	display: flex;
+	align-items: center;
+	/* Center the items vertically */
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.social-link {
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+/* 3 column layout styles */
+.gallery {
+	width: 80%;
+	/* Set the gallery width to 75% of the page */
+	margin: 0 auto;
+	/* Center the gallery horizontally */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/* Two columns on tablet */
+@media screen and (max-width: 768px) {
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+	}
+
+	.navbar {
+		width: 100%;
+	}
+
+	.navbar-left {
+		padding-left: 8px;
+	}
+
+	.navbar-right {
+		padding-right: 8px;
+	}
+}
+
+/* One column on mobile */
+@media screen and (max-width: 540px) {
+	.gallery {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+
+	.navbar {
+		width: 100%;
+	}
+
+	.navbar-left {
+		padding-left: 8px;
+	}
+
+	.navbar-right {
+		padding-right: 8px;
+	}
+}
+
+.gallery-item {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	aspect-ratio: 4/5;
+	/* Set the aspect ratio to 4:5 */
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* Crop and fill the container while maintaining aspect ratio */
+	transition: opacity 0.3s ease;
+}
+
+.image-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.image-info h2,
+.image-info p {
+	margin: 5px;
+}
+
+/* Hover effects */
+.gallery-item:hover img {
+	opacity: 0.5;
+}
+
+.gallery-item:hover .image-info {
+	opacity: 1;
+}
+
+
+/* Footer styles */
+.footer {
+	height: 130px;
+	color: black;
+	padding: 20px;
+}
+
+/* Center the contents vertically and horizontally */
+.footer .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	/* Ensure the container takes full height of the footer */
+}
+
+/* Style the footer text as needed */
+.footer p {
+	margin: 0;
+}
