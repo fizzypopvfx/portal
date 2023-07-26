@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100;0,300;0,400;1,900&display=swap"
+		rel="stylesheet">
+	<title>FIZZYPOP!</title>
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar">
+			<div class="navbar-left">
+				<a href="/" class="nav-link">Projects</a>
+				<!-- <a href="#" class="nav-link">About</a> -->
+			</div>
+			<h1 class="navbar-title">FIZZYPOP!</h1> <!-- Title added here -->
+			<div class="navbar-right">
+				<a href="https://www.instagram.com/fizzypopvfx/" class="social-link" target="_blank">Instagram</a>
+			</div>
+		</nav>
+		<section class="page-title-container">
+			<h1 class="page-title">Misc</h1>
+			<p>Examples of Motion Capture, Azure Kinect, and Virtual Production.</p>
+		</section>
+		<section class="details">
+			<div class="item">
+				<video src="assets/insta/mocap.mp4" playsinline muted loop preload="none" autoplay></video>
+				<h2 class="video-title">Motion Capture</h2>
+				<div class="description">
+					<p>The base motion for this dance was captured using an Azure Kinect and iPi Studio. iPi uses
+						machine
+						learning to track motion and apply it to an exisiting rig, in this case a mixamo rig.</p>
+					<p>Finer motions such as hand, wrist, and head movement were animated manually in Blender.
+						Generative
+						motion was also added to bring life to some static sections of the body.</p>
+				</div>
+			</div>
+			<div class="item">
+				<video src="assets/twitch/twitch-kinect.mp4" playsinline muted loop preload="none" autoplay></video>
+				<h2 class="video-title">Kinect Point Cloud Streaming</h2>
+				<div class="description">
+					<p>A live broadcast show on Twitch where I was present in a 3D world by means of Kinect v2 (later
+						Azure
+						Kinect). The point cloud was aligned with the environment and trimmed using a combination of the
+						Kinect's built in player masks and GLSL masking. Volumetric presence on Twitch still seems to be
+						novel years later.</p>
+				</div>
+			</div>
+			<div class="item">
+				<video src="assets/twitch/twitch-dancers.mp4" playsinline muted loop preload="none" autoplay></video>
+				<h2 class="video-title">Metaball Dancers</h2>
+				<div class="description">
+					<p>Using the Kinect's skeletal tracking I was able to build a simple line mesh and place metaballs
+						of
+						varying size along it. This provided real-time abstract characters that would follow my
+						movement.
+						Camera, scenes, and additional effects were all controlled remotely via OSC on an iPhone.</p>
+				</div>
+			</div>
+			<div class="item">
+				<video src="assets/twitch/twitch-dancehall.mp4" playsinline muted loop preload="none" autoplay></video>
+				<h2 class="video-title">Twitch Chat Controlled Characters</h2>
+				<div class="description">
+					<p>This video demonstrates an interactive dancehall where twitch viewers could control 3D characters
+						via
+						chat commands. Each viewer could claim a character by typing '!dance'. They could then make
+						characters dance, or twirl, or conga, amonst many other interactions.</p>
+					<p>The system combined TouchDesigner with a Python server and an external node.js script that talked
+						to
+						the Twitch API, all written from scratch.</p>
+				</div>
+			</div>
+			<div class="item">
+				<video src="assets/twitch/twitch-squats.mp4" playsinline muted loop preload="none" autoplay></video>
+				<h2 class="video-title">Squat Counting via Skeletal Tracking</h2>
+				<div class="description">
+					<p>This system counted squats by tracking the vertical motion of my head. In addition it would
+						modulate
+						the cameras position to zoom in and out as I moved for comic effect. The was a redemption Twitch
+						viewers could make during a stream.</p>
+				</div>
+			</div>
+			<div class="item">
+				<video src="assets/twitch/twitch-cliff.mp4" playsinline muted loop preload="none" autoplay></video>
+				<h2 class="video-title">Physics &amp; Performance</h2>
+				<div class="description">
+					<p>Viewers were also able to throw me off the side of the performance area and fall inifinitely.
+						This
+						effect was achieved by adding basic collision around the Kinect volume. Additional arm flailing
+						and
+						standing on one leg completed the effect.</p>
+				</div>
+			</div>
+			<div class="item">
+				<video src="assets/twitch/twitch-whales.mp4" playsinline muted loop preload="none" autoplay></video>
+				<h2 class="video-title">Whale Rain</h2>
+				<div class="description">
+					<p>Instanced bullet solver driven rain of whales!</p>
+				</div>
+			</div>
+		</section>
+		<!-- Footer section -->
+		<footer class="footer">
+			<div class="container">
+				<p>🧡</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
