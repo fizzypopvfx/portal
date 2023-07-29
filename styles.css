@@ -119,6 +119,37 @@ li {
 	margin-left: 10px;
 }
 
+/* diary */
+.diary-item {
+	/* Set the gallery width to 75% of the page */
+	margin: 0 auto;
+	/* Center the gallery horizontally */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 8px;
+	padding-bottom: 8px;
+}
+
+.diary-description {
+	padding-top: 0px;
+}
+
+.diary-description p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.diary-description h2 {
+	margin-top: 0;
+}
+
+.diary-video {
+	object-fit: cover;
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 4/5;
+	/* Set the aspect ratio to 4:5 */
+}
+
 /* 3 column layout styles */
 .gallery {
 	/* Set the gallery width to 75% of the page */
@@ -174,6 +205,16 @@ li {
 	.navbar-right {
 		padding-right: 8px;
 	}
+
+	.diary-item {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 0px;
+	}
+
+	.diary-description {
+		padding-top: 1em;
+	}
+	
 }
 
 .gallery-item {
