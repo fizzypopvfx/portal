@@ -132,10 +132,15 @@ li {
 
 .diary-description {
 	padding-top: 0px;
+	padding-bottom: 30px;
 }
 
 .diary-description p {
 	font-family: 'Roboto', sans-serif;
+}
+
+.diary-description a {
+	color: black;
 }
 
 .diary-description h2 {
@@ -146,7 +151,7 @@ li {
 	object-fit: cover;
 	position: relative;
 	overflow: hidden;
-	aspect-ratio: 4/5;
+	aspect-ratio: 9/16;
 	/* Set the aspect ratio to 4:5 */
 }
 
